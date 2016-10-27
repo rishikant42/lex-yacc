@@ -17,6 +17,7 @@ $ ./a.out
 
 #lex-yacc combine code running instruction
 
+```
 $ yacc -d file_name.y
 
 $ lex file_name.c
@@ -24,3 +25,13 @@ $ lex file_name.c
 $ gcc lex.yy.c y.tab.c
 
 $ ./a.out
+
+```
+
+
+                ------------                 ------------
+Reg. Exprsn --> |   LEX    | --> Tokens -->  |   YACC   | --> Parse tree
+                ------------                 ------------
+                                                  ^
+                                                  |
+                                               Grammer
